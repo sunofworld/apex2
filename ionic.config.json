@@ -1,0 +1,7 @@
+{
+  "name": "apex2",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

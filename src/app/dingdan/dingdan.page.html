@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid no-padding>
+      <ion-row class="tt">
+        <ion-col size="1">
+          <ion-icon name="arrow-back" class="iback" [routerLink]="[ '/tabs/tab4']"></ion-icon>
+        </ion-col>
+        <ion-col size="10">
+          <ion-title class="tit1">我的订单</ion-title>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-tab-button [routerLink]="['/dingdan/all']" routerLinkActive="active">
+            <ion-label>全部</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button [routerLink]="['/dingdan/daifa']" routerLinkActive="active">
+            <ion-label>待发货</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button [routerLink]="['/dingdan/daishou']" routerLinkActive="active">
+            <ion-label>待收货</ion-label>
+          </ion-tab-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

@@ -1,0 +1,30 @@
+.out{
+    border-radius: 50px;
+    background: rgb(117, 82, 82);
+    border: 0px solid;
+}
+.inp{
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline-style: none;
+    color: white;
+    font-size: 90%;
+}
+input::-webkit-input-placeholder{
+    color:rgb(185, 185, 185);
+    font-size: 90%;
+}
+
+img{
+    height: 1em;
+    margin: 0%;
+    padding: 0px;
+}
+.inn{
+    width: 1.5em;
+    border-radius: 100%;
+    background: rgb(117, 82, 82);
+    border: 0px solid;
+}

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <app-top></app-top>
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col>
+          <ion-tab-button [routerLink]="[ '/tabs/tab1/tuijian']" routerLinkActive="active">
+            <ion-label>推荐</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button [routerLink]="[ '/tabs/tab1/peijian' ]" routerLinkActive="active">
+            <ion-label>手机配件</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button [routerLink]="[ '/tabs/tab1/weixiu' ]" routerLinkActive="active">
+            <ion-label>手机维修</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col>
+          <ion-tab-button [routerLink]="[ '/tabs/tab1/huodong' ]" routerLinkActive="active">
+            <ion-label>活动</ion-label>
+          </ion-tab-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

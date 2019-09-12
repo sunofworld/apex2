@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row mt-4">
+    <div class="col-8 offset-1">
+      <div class="out container-fluid">
+        <div class="row">
+          <img class="mt-1 ml-2 mr-1" src="assets/find.svg" alt="find">
+          <input type="text" class="inp col-9" placeholder="搜你所想" [(ngModel)]="select" (keyup)="doserch($event)" onkeyup="this.value=this.value.replace(/\s+/g,'')">
+        </div>
+      </div>
+    </div>
+    <div class="inn ml-3" (click)="test()">
+      <img class="ml-1 mb-1" src="assets/twei.svg" alt="2wm">
+    </div>
+  </div>
+</div>

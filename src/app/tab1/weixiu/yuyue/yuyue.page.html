@@ -1,0 +1,26 @@
+<ion-content fullscreen="false">
+  <ion-card class="card1">
+    <ion-card-header class="had">
+      <ion-card-title class="tit1">预约上门维修</ion-card-title>
+    </ion-card-header>
+    <ion-card-content color="danger">
+      <ion-item-group>
+        <ion-item lines="inset">
+          <ion-label class="tit2">预约时间：</ion-label>
+          <ion-input class="tit2" type="text" placeholder="x年x月x日xx:xx" clear-input="true"></ion-input>
+        </ion-item>
+        <ion-item lines="inset">
+          <ion-label class="tit2">破损状况：</ion-label>
+          <ion-input class="tit2" type="text" clear-input="true"></ion-input>
+        </ion-item>
+        <ion-item lines="inset">
+          <ion-label class="tit2">地址：</ion-label>
+          <ion-input class="tit2" type="text" placeholder="x省x市xxxx" clear-input="true"></ion-input>
+        </ion-item>
+          <ion-button (click)="onClick()" type="submit" size="large" class="buton">
+            预约
+          </ion-button>
+      </ion-item-group>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

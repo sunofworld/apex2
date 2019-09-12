@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon slot="start" name="arrow-back" class="ion" [routerLink]="[ '/tabs/tab1/tuijian']"></ion-icon>
+    <ion-label class="la1">登录</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="10" offset="1">
+        <ion-item class="it1" no-padding>
+          <ion-icon name="md-person"></ion-icon>
+          <ion-input class="in" placeholder="你的手机号" maxlength=11 [(ngModel)]="uid"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="10" offset="1">
+        <ion-item class="it1" no-padding>
+          <ion-icon name="md-lock"></ion-icon>
+          <ion-input class="in" placeholder="请输入密码" maxlength=16 type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row1">
+      <ion-col size="5" offset="1">
+        <ion-button [routerLink]="[ '/zhuce']" expand="block" fill="outline" class="but1">
+          注册账号
+        </ion-button>
+      </ion-col>
+      <ion-col size="5">
+        <ion-button (click)="sup()" expand="block" class="but2">
+          登录
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

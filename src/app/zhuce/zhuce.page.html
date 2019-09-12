@@ -1,0 +1,61 @@
+<ion-header no-border>
+    <ion-toolbar>
+      <ion-icon slot="start" name="arrow-back" class="ion" [routerLink]="[ '/denglu']"></ion-icon>
+      <ion-label class="la1">注册账号</ion-label>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12"></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-item class="it1" no-padding>
+            <ion-label>输入账号:</ion-label>
+            <ion-input class="in" placeholder="请输入中国大陆手机号" maxlength=11 [(ngModel)]="uid"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-item class="it1" no-padding>
+            <ion-label>输入密码:</ion-label>
+            <ion-input class="in" placeholder="不超过16个字符" maxlength=16 type="password" [(ngModel)]="password1"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col size="10" offset="1">
+            <ion-item class="it1" no-padding>
+              <ion-label>确认密码:</ion-label>
+              <ion-input class="in" placeholder="不超过16个字符" maxlength=16 type="password" [(ngModel)]="password2"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="10" offset="1">
+              <ion-item class="it1" no-padding>
+                <ion-label>密保问题:</ion-label>
+                <ion-input class="in" placeholder="不超过16个字符" maxlength=16 [(ngModel)]="mb1"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size="10" offset="1">
+                <ion-item class="it1" no-padding>
+                  <ion-label>密保答案:</ion-label>
+                  <ion-input class="in" placeholder="不超过16个字符" maxlength=16 [(ngModel)]="mb2"></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+      <ion-row class="row1">
+        <ion-col size="10" offset="1">
+          <ion-button (click)="onClick()" expand="block" class="but2">
+            注册
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

@@ -1,0 +1,49 @@
+<ion-content fullscreen="false">
+    <app-slide></app-slide>
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col>
+                <ion-card class="card1">
+                    <ion-card-header>
+                        <ion-card-title class="cardt">正在热销</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content class="pd0">
+                        <ion-grid fixed class="pd0">
+                            <ion-row>
+                                <ion-col size="4" class="pd0" *ngFor="let item of rexiao">
+                                    <ion-item-group (click)="clicka(item.cid)">
+                                        <ion-label class="tit1">{{item.cname}}</ion-label>
+                                        <ion-label class="tit2">{{item.mark}}</ion-label>
+                                        <ion-item lines="none" class="it">
+                                            <img src={{item.mainimg}} class="img1">
+                                        </ion-item>
+                                    </ion-item-group>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+        <ion-row class="row1">
+            <ion-col>
+                <ion-title class="tit3">精品推荐</ion-title>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="6" *ngFor="let item of tuijian">
+                <ion-card class="card2" (click)="clicka(item.cid)">
+                    <ion-card-header>
+                        <img src={{item.mainimg}} class="img1">
+                    </ion-card-header>
+                    <ion-card-content class="ct">
+                        <ion-card-title class="tit4">{{item.cname}}</ion-card-title>
+                        {{item.mark}}
+                        <ion-card-subtitle class="money">￥{{item.oneprice}}</ion-card-subtitle>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    
+</ion-content>

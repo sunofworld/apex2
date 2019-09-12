@@ -1,0 +1,98 @@
+<ion-content fullscreen="false">
+    <app-slide></app-slide>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col>
+            <ion-card class="card1">
+                <ion-card-header>
+                    <ion-card-title class="cardt">充电器</ion-card-title>
+                </ion-card-header>
+                <ion-card-content class="pd0">
+                    <ion-grid fixed class="pd0">
+                        <ion-row>
+                            <ion-col size="3" class="pd0" *ngFor="let all of cdq">
+                                <ion-item-group (click)="clicka()"> 
+                                    <ion-item lines="none" class="it">
+                                        <img src={{all.img}} class="img1">
+                                    </ion-item>
+                                    <ion-label class="tit1">{{all.pname}}</ion-label>
+                                </ion-item-group>
+                            </ion-col>
+                            <ion-col size="3">
+                                <ion-item-group (click)="clicka()"> 
+                                    <ion-item lines="none" class="it">
+                                        <img src="../../../assets/more.svg" class="img1">
+                                    </ion-item>
+                                    <ion-label class="tit1">更多</ion-label>
+                                </ion-item-group>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            <ion-card class="card1">
+                <ion-card-header>
+                    <ion-card-title class="cardt">手机膜</ion-card-title>
+                </ion-card-header>
+                <ion-card-content class="pd0">
+                    <ion-grid fixed class="pd0">
+                        <ion-row>
+                            <ion-col size="3" class="pd0" *ngFor="let all of sjm">
+                                <ion-item-group (click)="clicka()"> 
+                                    <ion-item lines="none" class="it">
+                                        <img src={{all.img}} class="img1">
+                                    </ion-item>
+                                    <ion-label class="tit1">{{all.pname}}</ion-label>
+                                </ion-item-group>
+                            </ion-col>
+                            <ion-col size="3">
+                                <ion-item-group (click)="clicka()"> 
+                                    <ion-item lines="none" class="it">
+                                        <img src="../../../assets/more.svg" class="img1">
+                                    </ion-item>
+                                    <ion-label class="tit1">更多</ion-label>
+                                </ion-item-group>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            <ion-card class="card1">
+                <ion-card-header>
+                    <ion-card-title class="cardt">充电宝</ion-card-title>
+                </ion-card-header>
+                <ion-card-content class="pd0">
+                    <ion-grid fixed class="pd0">
+                        <ion-row>
+                            <ion-col size="3" class="pd0" *ngFor="let all of cdb">
+                                <ion-item-group (click)="clicka()"> 
+                                    <ion-item lines="none" class="it">
+                                        <img src={{all.img}} class="img1">
+                                    </ion-item>
+                                    <ion-label class="tit1">{{all.pname}}</ion-label>
+                                </ion-item-group>
+                            </ion-col>
+                            <ion-col size="3">
+                                <ion-item-group (click)="clicka()"> 
+                                    <ion-item lines="none" class="it">
+                                        <img src="../../../assets/more.svg" class="img1">
+                                    </ion-item>
+                                    <ion-label class="tit1">更多</ion-label>
+                                </ion-item-group>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

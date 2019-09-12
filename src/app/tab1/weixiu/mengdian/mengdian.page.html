@@ -1,0 +1,49 @@
+<ion-content fullscreen="false">
+  <hr class="hr1">
+  <ion-list>
+    <ion-list-header>
+      <ion-label class="tit1">请选择所在地</ion-label>
+    </ion-list-header>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item class="it1" lines="none">
+            <ion-label>省</ion-label>
+            <ion-select interface="action-sheet" (ionChange)="next1()" [(ngModel)]="sekey" cancel-text="取消">
+              <ion-select-option *ngFor="let item of se,let key=index" value={{key}}>{{item.shen}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item class="it1" lines="none">
+            <ion-label>市</ion-label>
+            <ion-select interface="action-sheet" (ionChange)="next2()" [(ngModel)]="sikey" cancel-text="取消">
+              <ion-select-option *ngFor="let item of si,let key =index" value={{key}}>{{item.shi}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" class="pd0">
+          <ion-button (click)="display()" class="bttn">
+            确定
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+  <div *ngIf="flag==1">
+    <ion-list *ngFor="let item of d">
+      <hr class="hr2">
+      <ion-item lines="none">
+        <ion-title class="tit2">{{item.dian}}</ion-title>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label class="it2">XXXXXXXXXXX</ion-label>
+      </ion-item>
+
+
+    </ion-list>
+  </div>
+</ion-content>

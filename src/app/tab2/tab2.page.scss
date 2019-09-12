@@ -1,0 +1,62 @@
+ion-toolbar {
+    --background: #fc2c2c;
+  }
+.c1{
+  --background: #ececec;
+}
+.c2{
+  --background: rgb(245, 245, 245);
+}
+.pd1{
+  padding: 0px;
+  background: #c4c4c4;
+}
+.gp{
+  padding: 0px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  
+}
+.sr{
+  flex-grow: 1;
+}
+.lm{
+  padding: 0px;
+}
+.it1{
+  --background: #ececec;
+}
+.card1{
+  margin: 0.8em;
+}
+.cardt{
+  margin-top: -0.6em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.card2{
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  background: white;
+}
+.pd0{
+  padding: 0px;
+}
+.it{
+  --padding-bottom:0.5em;
+}
+.img1{
+  width: 100%;
+}
+.tit1{
+  color:black;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 0.4em;
+}
+.li1{
+  margin-top: 0.8em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}

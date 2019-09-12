@@ -1,0 +1,5 @@
+<ion-slides #slides pager="true" (ionSlideTouchEnd)='plays()' >
+    <ion-slide *ngFor="let item of gg">
+        <img class="img1" src={{item.url}} alt="img1" (click)="clicka(item.cid)">
+    </ion-slide>
+</ion-slides>

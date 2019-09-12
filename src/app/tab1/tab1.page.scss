@@ -1,0 +1,17 @@
+
+ion-toolbar {
+  --background: #fc2c2c;
+}
+
+ion-grid{
+  margin-top: 0.3em;
+  margin-bottom: -0.2em;
+}
+
+ion-tab-button{
+  color: #ffd9d9;
+  outline: none;
+}
+ion-tab-button.active{
+  color: #ffffff;
+}

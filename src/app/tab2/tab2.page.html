@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <app-top></app-top>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="false">
+    <ion-grid fixed class="gp">
+      <ion-row class="sr">
+        <ion-col size="3" class="pd1">
+          <ion-content fullscreen="false" class="c1">
+              <ion-list class="li1">
+                  <ion-item lines="none" class="it1" *ngFor="let item of fenlei,let key = index" (click)="getone(key)">
+                    <ion-label>{{item}}</ion-label>
+                  </ion-item>
+                </ion-list>
+          </ion-content>
+        </ion-col>
+        <ion-col size="9" class="lm">
+            <ion-content fullscreen="false" class="c2">
+                <ion-card class="card1">
+                    <app-slide></app-slide>
+                </ion-card>
+                <ion-card class="card2">
+                  <ion-card-header>
+                    <ion-card-title class="cardt">{{aphone}}热销机型</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content class="pd0">
+                      <ion-grid fixed class="pd0">
+                          <ion-row>
+                              <ion-col size="4" class="pd0" *ngFor="let all of tuijian">
+                                  <ion-item-group (click)="clicka(all.cid)"> 
+                                      <ion-item lines="none" class="it">
+                                          <img src={{all.mainimg}} class="img1">
+                                      </ion-item>
+                                      <ion-label class="tit1">{{all.cname}}</ion-label>
+                                  </ion-item-group>
+                              </ion-col>
+                              <ion-col size="4">
+                                  <ion-item-group (click)="clickb()"> 
+                                      <ion-item lines="none" class="it">
+                                          <img src="../../../assets/more.svg" class="img1">
+                                      </ion-item>
+                                      <ion-label class="tit1">更多</ion-label>
+                                  </ion-item-group>
+                              </ion-col>
+                          </ion-row>
+                      </ion-grid>
+                  </ion-card-content>
+                </ion-card>
+              </ion-content>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-content fullscreen="false">
+  <ion-card class="card1" *ngFor="let item of myfix">
+    <ion-card-header class="had">
+      <ion-card-title class="tit1" *ngIf="item.zhuangtai==1">未维修</ion-card-title>
+      <ion-card-title class="tit2" *ngIf="item.zhuangtai==2">等待客户确认</ion-card-title>
+      <ion-card-title class="tit3" *ngIf="item.zhuangtai==3">维修完成</ion-card-title>
+    </ion-card-header>
+    <ion-card-content color="danger">
+      <ion-item-group>
+        <ion-item lines="inset">
+          <ion-label class="tit4">预约类别：{{item.leixing}}</ion-label>
+        </ion-item>
+        <ion-item lines="inset">
+          <ion-label class="tit4">描述：{{item.miaoshu}}</ion-label>
+        </ion-item>
+        <ion-item lines="inset">
+          <ion-label class="tit4">维修时间：{{item.shijian}}</ion-label>
+        </ion-item>
+        <ion-item lines="inset">
+          <ion-label class="tit4">维修人员：{{item.person}}</ion-label>
+        </ion-item>
+      </ion-item-group>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

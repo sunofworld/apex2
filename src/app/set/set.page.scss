@@ -1,0 +1,50 @@
+ion-toolbar{
+    --padding-top: 0.8em;
+    --background: #fc2c2c;
+}
+ion-content{
+    --background: rgb(245, 245, 245);
+}
+.ion{
+    font-size: 1.2em;
+    padding: 0.5em;
+    font-weight: 400;
+    color: white;
+}
+.la1{
+    font-size: 1em;
+    padding: 0.5em;
+    font-weight: 400;
+    color: white;
+}
+.la2{
+    width: 85%;
+}
+.card1{
+    margin-top: 2em;
+    --background: rgb(255, 255, 255);
+}
+.subt{
+    font-size: 1.2em;
+}
+.chip1{
+    width: 100%;
+    font-size: 1.2em;
+}
+.tit1{
+    font-size: 1.5em;
+    font-weight: 400;
+  
+  }
+.img1{
+    width: 100%;
+    border-radius: 50%;
+  }
+.but{
+      --background: rgb(82, 82, 214);
+      font-size: 0.6em;
+      height: 2.4em;
+  }
+.icon2{
+      font-size: 2em;
+  }

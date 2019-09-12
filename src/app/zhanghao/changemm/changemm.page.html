@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon slot="start" name="arrow-back" class="ion" [routerLink]="[ '/zhanghao']"></ion-icon>
+    <ion-label class="la1">修改密码</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="flag==1">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12" class="col1">
+          <ion-label class="la2">为了你的账户安全，需要验证您的密保！</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-item lines="none" class="it1">
+      <ion-grid fixed class="pdl">
+        <ion-row>
+          <ion-col size="3" class="pdl">
+            <ion-label>密保问题:</ion-label>
+          </ion-col>
+          <ion-col size="9">
+            <ion-label>{{user.mbwt}}</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item lines="none" class="it1">
+      <ion-label class="la3">答案:</ion-label>
+      <ion-input type="text" clear-input="true" [(ngModel)]="mbda"></ion-input>
+    </ion-item>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-button (click)="step1()" expand="block" class="but1">
+            下一步
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="flag==2">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12" class="col1">
+          <ion-label class="la2">请仔细确认你的输入！</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-item lines="none" class="it1">
+      <ion-label class="la3">原密码:</ion-label>
+      <ion-input type="password" clear-input="true" [(ngModel)]="ymm"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="it1">
+      <ion-label class="la3">新密码:</ion-label>
+      <ion-input type="password" clear-input="true" [(ngModel)]="xmm"></ion-input>
+    </ion-item>
+    <ion-item lines="none" class="it1">
+      <ion-label class="la4">确认密码:</ion-label>
+      <ion-input type="password" clear-input="true" [(ngModel)]="rxmm"></ion-input>
+    </ion-item>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <ion-button (click)="step2()" expand="block" class="but1">
+            确定
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>
